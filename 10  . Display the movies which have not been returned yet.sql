@@ -1,4 +1,4 @@
-SELECT CONCAT(c.first_name,' ',c.last_name )'CUSTOMER_NAME' ,f.title,r.return_date 
+SELECT CONCAT(c.first_name,' ',c.last_name )'CUSTOMER_NAME' , f.title, r.return_date 
 FROM sakila.rental r
 join inventory i on i.inventory_id=r.inventory_id
 join film f on f.film_id = i.film_id
